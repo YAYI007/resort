@@ -1,0 +1,369 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+.header
+{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0, 0, 0, 0.75)),url("background.png");
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.header h1
+{
+    font-family: 'Lucida Sans';
+}
+
+.nav-bar
+{
+    background-color: rgba(255, 255, 255, 0.71);
+    width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: 0.5s;
+}
+
+.nav-bar:hover
+{
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.nav-bar ul li
+{
+    display: block;
+    font-family: 'Lucida Sans';
+    list-style-type: none;
+    display: inline-block;
+    margin: 0 20px 5px 0;
+    position: relative;
+}
+
+.nav-bar ul li a
+{
+    color: rgb(110 114 117);
+    text-decoration: none;
+    font-size: .9em;
+    transition: 0.5s;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+
+.nav-bar ul li a:hover
+{
+    font-size: .9em;
+}
+
+
+.nav-bar ul li::after
+{
+    content: '';
+    height: 3px;
+    width: 0%;
+    background: #00ffaa;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
+}
+
+.nav-bar ul li:hover::after
+{
+    width: 100%;
+}
+
+.content
+{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+.content h1
+{
+    font-size: 40px;
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+}
+
+.content p
+{
+    margin-top: 2%;
+    margin-left: 29%;
+    text-align: center;
+    width: 40%;
+    font-family: arial;
+    margin-bottom: 5%;
+}
+
+.content a
+{
+    padding: 15px;
+    width: 200px;
+    border-radius: 25px;
+    background: transparent;
+    border: 2px solid #0099ff;
+    cursor: pointer;
+    color: #fff;
+    text-transform: uppercase;
+    transition: 0.5s;
+    text-decoration: none;
+    font-family: arial;
+    font-weight: bold;
+}
+
+.content a:hover
+{
+    padding: 19px;
+}
+
+.info h1
+{
+    margin-top: 5%;
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    color: rgb(110 114 117);
+    margin-bottom: 20px;
+}
+
+.info p
+{
+    margin-left: 25%;
+    width: 50%;
+    text-align: center;
+    line-height: 1.6em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.reservar
+{
+    text-align: center;
+}
+
+.reservar img
+{
+    border-radius: 60%;
+    margin-right: 40%;
+}
+
+.reservar h1
+{
+    margin-top: 5%;
+    font-size: 2.875rem;
+    line-height: 2.25rem;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    color: rgb(110 114 117);
+    margin-bottom: 5%;
+}
+
+.reservar h3
+{
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    color: rgb(49, 49, 49);
+    margin-bottom: 20px;
+}
+
+.reservar h2
+{
+    margin-top: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: .875rem;
+}
+
+
+.reservar p
+{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: .875rem;
+    margin-bottom: 5%;
+}
+
+.reservar a
+{
+    padding: 10px;
+    width: 200px;
+    border-radius: 25px;
+    background: transparent;
+    border: 2px solid #0099ff;
+    cursor: pointer;
+    color: #000;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.5s;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.reservar a:hover
+{
+    padding: 20px 10px;
+}
+
+.right{
+    margin-top: -20%;
+    margin-left: 35%;
+}
+
+.footer
+{
+    margin-top: 20%;
+    background-color: #000;
+    padding: 2%;
+    text-align: center;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+#img-resort {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: auto;
+    max-width: 800px;
+    width: 100%;
+    padding: 30px;
+}
+
+#img-resort ul, li {
+    list-style: none;
+}
+
+#img-resort ul.slider {
+    position: relative;
+    max-width: 800px;
+    width: 100%;
+    height: 300px;
+}
+
+#img-resort ul.slider li {
+    position: absolute;
+    opacity: 0;
+    width: inherit;
+    height: inherit;
+    transition: opacity .5s;
+    background: #fff;
+}
+
+#img-resort ul.slider li img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+#img-resort ul.slider li:first-child {
+    opacity: 1;
+}
+
+#img-resort .menu {
+    text-align: center;
+    margin: 20px;
+}
+
+#img-resort .menu li {
+    display: inline-block;
+    text-align: center;
+}
+
+#img-resort .menu li a {
+    display: inline-block;
+    color: black;
+    background-color: rgba(183, 183, 183, 0.671);
+    text-decoration: none;
+    padding: 10px;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    border-radius: 100%;
+    transition: 0.5s;
+    margin-left: 20px;
+}
+
+#img-resort .menu li a:hover{
+    padding: 15px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 20px;
+    color: #fff;
+    margin-top: 10%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  
+  .informacion ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+  
+  .informacion li {
+    margin-right: 20px;
+  }
+  
+  .informacion a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.2s;
+  }
+  
+  .informacion a:hover {
+    color: #ccc;
+  }
+  
+  .redes-sociales a {
+    color: #fff;
+    font-size: 20px;
+    margin-right: 10px;
+    transition: color 0.2s;
+  }
+  
+  .redes-sociales a:hover {
+    color: #ccc;
+  }
+  
+  .derechos-de-autor {
+    font-size: 12px;
+  }
+  
+  .fab {
+    display: inline-block;
+    font-size: inherit;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .fab.fa-facebook-f:before {
+    content: "\f39e";
+  }
+  
+  .fab.fa-twitter:before {
+    content: "\f099";
+  }
+  
+  .fab.fa-instagram:before {
+    content: "\f16d";
+  }
+  
